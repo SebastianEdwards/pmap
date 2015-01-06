@@ -6,6 +6,8 @@ require 'test/unit'
 require 'rubygems'
 require 'pmap'
 
+Concurrent.configuration.auto_terminate = false
+
 class Pmap_Test < Test::Unit::TestCase
 
   def bad_test_noproc_range
